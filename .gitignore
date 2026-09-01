@@ -1,0 +1,106 @@
+# macOS
+.DS_Store
+
+# ============================================================
+# WordPress core
+# ============================================================
+
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+
+# Local configuration
+/wp-config.php
+
+# ============================================================
+# MAMP / local files
+# ============================================================
+
+/.well-known/
+/.htaccess
+
+# ============================================================
+# WordPress temporary/cache files
+# ============================================================
+
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
+/wp-content/wc-logs/
+
+# ============================================================
+# WordPress languages
+# ============================================================
+
+/wp-content/languages/
+
+# ============================================================
+# Plugins - ignore everything first
+# ============================================================
+
+/wp-content/plugins/*
+
+# Keep assignment-related plugins
+!/wp-content/plugins/woocommerce/
+!/wp-content/plugins/woocommerce/**
+!/wp-content/plugins/elementor/
+!/wp-content/plugins/elementor/**
+!/wp-content/plugins/pro-elements/
+!/wp-content/plugins/pro-elements/**
+!/wp-content/plugins/custom-fonts/
+!/wp-content/plugins/custom-fonts/**
+!/wp-content/plugins/wp-reviews-plugin-for-google/
+!/wp-content/plugins/wp-reviews-plugin-for-google/**
+
+# ============================================================
+# Themes - ignore everything first
+# ============================================================
+
+/wp-content/themes/*
+
+# Keep Astra
+!/wp-content/themes/astra/
+!/wp-content/themes/astra/**
+
+# Keep Astra Child
+!/wp-content/themes/astra-child/
+!/wp-content/themes/astra-child/**
+
+# ============================================================
+# Uploads
+# ============================================================
+
+# Keep uploads for the assignment
+!/wp-content/uploads/
+!/wp-content/uploads/**
+
+# Ignore WooCommerce generated/log files
+/wp-content/uploads/wc-logs/
+/wp-content/uploads/woocommerce_uploads/q
+# On macOS you should ignore .DS_Store files.
+.DS_Store
+
+# Ignore everything in the WP root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+ 
+# Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+ 
+# Ignore everything in the "plugins" directory.
+# wp-content/plugins/*
+
+# Exempt my-example-plugin from this general ignore rule.
+# !wp-content/plugins/my-example-plugin/
+ 
+# Ignore everything in the "themes" directory.
+# wp-content/themes/*
+
+# Exempt my-theme from this general ignore rule.
+# !wp-content/themes/my-theme/
